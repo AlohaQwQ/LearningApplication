@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.star.learningapplication">
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.star.learningapplication.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_night"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HencoderApplication">
+
+        <activity
+            android:name="com.star.learningapplication.ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/Theme.HencoderApplication.NoActionBar"/>
+        <activity
+            android:name="com.star.learningapplication.TabActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/Theme.HencoderApplication.NoActionBar" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.star.learningapplication.MainActivity3"
+            android:label="@string/title_activity_main3"
+            android:theme="@style/Theme.HencoderApplication.NoActionBar">
+
+        </activity>
+        <activity android:name="com.star.learningapplication.MainActivity" />
+
+        <activity android:name=".TestActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
